@@ -25,6 +25,9 @@ public class ShadowDisplay {
     private int rotation = Surface.ROTATION_0;
     private int pixelFormat = PixelFormat.RGBA_4444;
 
+    public void __constructor__() {
+    }
+
     @Implementation
     public int getHeight() {
         return height;

@@ -139,7 +139,8 @@ public class ShadowWrangler implements ClassHandler {
     }
 
     private boolean strict(InvocationProfile invocationProfile) {
-        return invocationProfile.clazz.getName().startsWith("android.support") || invocationProfile.isSpecial();
+        return true;
+//        return invocationProfile.clazz.getName().startsWith("android.support") || invocationProfile.isSpecial();
     }
 
     private Class<?> getShadowedClass(Method shadowMethod) {

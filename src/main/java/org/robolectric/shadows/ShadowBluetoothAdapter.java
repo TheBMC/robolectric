@@ -23,6 +23,9 @@ public class ShadowBluetoothAdapter {
     private boolean enabled;
     private int state;
 
+    public void __constructor__() {
+    }
+
     @Implementation
     public static BluetoothAdapter getDefaultAdapter() {
         return (BluetoothAdapter) shadowOf(Robolectric.application).getBluetoothAdapter();
